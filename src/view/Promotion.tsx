@@ -11,7 +11,7 @@ const Promotion = () => {
   return (
     <div className="">
       <div className="flex justify-center font-bold text-blue-600 text-sm pt-16 ">PROMOTIONS</div>
-      <div className="flex justify-center font-bold text-5xl pt-3 pb-8">Our Promotions Events</div>
+      <div className="flex justify-center font-bold text-4xl pt-3 pb-8">Our Promotions Events</div>
     <div className="grid gap-4 lg:grid-cols-4 ">
     <div className="md:col-span-2 grid gap-4 ">
       <div className="bg-[#D6D6D8] h-[180px]  pr-3 ">

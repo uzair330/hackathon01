@@ -26,13 +26,13 @@ const SwipperProduct = () => {
           },
         }}
         spaceBetween={10}
-        // slidesPerView={3}
+        
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
         {Products.map((product) => (
           <SwiperSlide key={product.id}>
-            <div className="hover:scale-105 shadow-sm">
+            <div className="hover:scale-105 ">
             <ProductCard
               key={product.id}
               title={product.name}

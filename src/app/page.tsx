@@ -1,6 +1,6 @@
 "use client"
 import SwipperProduct from "@/components/SwipperProduct";
-import Unique from "@/components/Unique";
+import Unique2 from "@/components/Unique02";
 import { Hero } from "@/view/Hero";
 import { ProductList } from "@/view/ProductList";
 import Promotion from "@/view/Promotion";
@@ -13,7 +13,7 @@ export default function Home() {
 <Promotion />
       {/* <ProductList /> */}
       <SwipperProduct />
-      <Unique />
+      <Unique2 />
     </>
   );
 }

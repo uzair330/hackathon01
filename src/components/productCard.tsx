@@ -9,7 +9,7 @@ export const ProductCard = (props: {
   id: number;
 }) => {
   return (
-    <div className="">
+    <div className="p-5">
       <Link href={`/products/${props.id}`}>
         <Image  src={props.img} alt="product" width={400}/>
         <h3 className="font-bold text-lg mt-4">{props.title}</h3>
