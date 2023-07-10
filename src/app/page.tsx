@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Newsletter from "@/components/Newsletter";
 import SwipperProduct from "@/components/SwipperProduct";
 import Unique2 from "@/components/Unique02";
@@ -11,19 +11,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-   
       <Hero />
-      
-      <div className="">
-<Promotion/>
 
-      </div>
-      {/* <ProductList /> */}
-      {/* <Promo02 /> */}
+      <Promotion />
       <SwipperProduct />
       <Unique2 />
       <Newsletter />
-      
     </>
   );
 }

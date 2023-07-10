@@ -20,7 +20,7 @@ export default function Category({ params }: { params: { items: string } }) {
             img={product.image as StaticImageData}
             category={product.catagory}
             id={product.id}
-            itemType={product.tag}
+            tag={product.tag} 
           />
         ))
       ) : (

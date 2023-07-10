@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
             
         </div>
-        <div className="w-full h-1 bg-gray-400"></div>
+        <hr className="border border-gray-300 my-4" />
         <div className="grid md:px-28 px-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center w-full h-16 items-center ">
 <div className="">Copyright © 2022 Dine Market</div>
 <div className="">Design by. <span className='font-bold'>Muhammad Uzair</span></div>

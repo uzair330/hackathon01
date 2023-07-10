@@ -7,9 +7,12 @@ import h2 from "/public/h2.webp";
 import h3 from "/public/h3.webp";
 import h4 from "/public/h4.webp";
 import Image from "next/image";
+import Wrapper from "@/components/Wrapper";
 
 export const Hero = () => {
   return (
+    <Wrapper>
+
     <section className="flex flex-col gap-y-10 lg:flex-row py-10">
       {/* left div */}
       <div className="flex-1 lg:w-[60%] md:w-[100%]">
@@ -56,5 +59,6 @@ export const Hero = () => {
         </div>
       </div>
     </section>
+    </Wrapper>
   );
 };

@@ -6,9 +6,12 @@ import P3 from "/public/pro3.webp";
 
 
 import React from 'react'
+import Wrapper from "@/components/Wrapper";
 
 const Promotion = () => {
   return (
+    <Wrapper>
+
     <section className=" px-3 max-w-[1240px] mx-auto mt-10">
     <div className="">
       <div className="flex justify-center font-bold text-blue-600 md:text-sm text-[10px] pt-16 ">PROMOTIONS</div>
@@ -76,6 +79,7 @@ const Promotion = () => {
   </div>
   </section>
   
+  </Wrapper>
   )
 }
 

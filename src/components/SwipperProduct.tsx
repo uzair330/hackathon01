@@ -5,8 +5,13 @@ import { StaticImageData } from "next/image";
 // Import Swiper styles
 import "swiper/css";
 import { Products } from "@/app/utils/mock";
+import Wrapper from "./Wrapper";
 const SwipperProduct = () => {
   return (
+    <section className="bg-gray-50">
+
+    <Wrapper>
+
     <div className="pb-10">
       <div className="flex justify-center font-bold text-blue-600 md:text-sm text-[10px] pt-28 ">
         PRODUCTS
@@ -48,6 +53,8 @@ const SwipperProduct = () => {
         </Swiper>
       </div>
     </div>
+    </Wrapper>
+    </section>
   );
 };
 
