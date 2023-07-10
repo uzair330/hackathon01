@@ -5,9 +5,16 @@ import Image from "next/image";
 const Unique02 = () => {
   return (
     <>
+    <div className="grid md:grid-cols-1 lg:grid-cols-4 ">
+        <div className=""></div>
+        <div className=""></div>
+
+    <div className="flex  text-4xl font-bold lg:col-span-2">Unique and Authentic Vintage Designer Jewellery</div>
+    </div>
       <div className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-4">
+      
         <div className="md:col-span-2 col-span-1 lg:col-span-1">
-<div className="flex flex-col my-5 px-2">
+<div className="flex flex-col mt-16 px-2">
     <div className=""><span className="font-bold text-xl py-3 ">Using Good Quality Materials</span> 
         <p className="pb-20">
         Lorem ipsum dolor sit amt, consectetur adipiscing elit.
@@ -20,7 +27,7 @@ const Unique02 = () => {
 
         </div>
         <div className="md:col-span-2 col-span-1 lg:col-span-1">
-        <div className="flex flex-col my-5 px-2">
+        <div className="flex flex-col mt-16 px-2">
     <div className=""><span className="font-bold text-xl  ">100% Handmade Products</span> 
         <p className="pb-20">
         Lorem ipsum dolor sit amt, consectetur adipiscing elit.
@@ -32,13 +39,14 @@ const Unique02 = () => {
 </div>
 
         </div>
-        <div className="md:col-span-1 col-span-2 lg:col-span-1 flex justify-center p-2">
+        
+        <div className="md:col-span-1 col-span-2 lg:col-span-1 flex justify-center ">
           
-          <Image className="" src={Products[0].image} alt={Products[0].name} />
+          <Image className="scale-120 p-3" src={Products[0].image} alt={Products[0].name} />
         </div>
-        <div className="md:col-span-3 col-span-2 lg:col-span-1"><div className="py-9">
-    <p className="py-5">This piece is ethically crafted in our small family-owned workshop in Peru with unmatched attention to detail and care. The Natural color is the actual natural color of the fiber, undyed and 100% traceable.</p>
-    <div className=""><Button>See All Products</Button></div>
+        <div className="md:col-span-3 col-span-2 lg:col-span-1"><div className="">
+    <p className="lg:pt-24 pt-5">This piece is ethically crafted in our small family-owned workshop in Peru with unmatched attention to detail and care. The Natural color is the actual natural color of the fiber, undyed and 100% traceable.</p>
+    <div className="pt-4"><Button>See All Products</Button></div>
   </div></div>
       </div>
     </>

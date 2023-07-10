@@ -7,7 +7,7 @@ import { MenuIcon } from "lucide-react";
 export const Header = () => {
   return (
     <>
-      <div className="flex justify-between items-center py-6 md:px-28 px-16">
+      <div className="flex justify-between items-center py-6 lg:px-16 md:px-28 px-16">
         <Link href="/">
           <Image src={logo} alt="Logo" />
         </Link>

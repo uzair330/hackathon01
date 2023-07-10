@@ -12,7 +12,8 @@ export default function ProductId({ params }: { params: { id: string } }) {
   const result = itemdetails(params.id);
   //console.log(result);
   return (
-    <section className="py-12 flex justify-center items-center flex-wrap gap-8">
+    <section className="">
+      <div className="py-12 flex justify-center items-center flex-wrap gap-8">
       {result.map((product) => (
         <ProductDetailCard
           key={product.id}
@@ -24,6 +25,9 @@ export default function ProductId({ params }: { params: { id: string } }) {
           tag={product.tag}
         />
       ))}
+
+      </div>
+      <div className="">1</div>
     </section>
   );
 }

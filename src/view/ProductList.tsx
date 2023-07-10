@@ -16,22 +16,24 @@ export const ProductList = () => {
               img={product.image as StaticImageData}
               category={product.catagory}
               id={product.id}
+              itemType={product.tag}
             />
           ))}
         </div>
       </div>
       <div className="md:hidden">
-      {ProductSmall.map((product) => (
-            <ProductCard
-              key={product.id}
-              title={product.name}
-              price={product.price}
-              img={product.image as StaticImageData}
-              category={product.catagory}
-              id={product.id}
-            />
-          ))}
-        
+        {ProductSmall.map((product) => (
+          <ProductCard
+            key={product.id}
+            title={product.name}
+            price={product.price}
+            img={product.image as StaticImageData}
+            category={product.catagory}
+            id={product.id}
+            itemType={product.tag}
+          />
+        ))}
+
         {/* <ProductCard
           title={ProductLarge[0].name}
           price={ProductLarge[0].price}
