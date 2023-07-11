@@ -8,4 +8,6 @@ price:number,
 catagory:string,
 image:StaticImageData | string
 tag:string
+var1?:StaticImageData | string
+var2?:StaticImageData | string
 }

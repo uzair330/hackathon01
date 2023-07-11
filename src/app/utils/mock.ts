@@ -11,6 +11,8 @@ import P8 from "/public/products/8.png";
 import P9 from "/public/products/9.png";
 import P10 from "/public/products/10.png";
 import P11 from "/public/products/11.png";
+import P21 from "/public/11.png";
+import P22 from "/public/22.png";
 export const Products:product[]=[
     {
         id:1,
@@ -24,8 +26,10 @@ tag:"Sweater"
 name:"Cameryn Sash Tie Dress",
 price:545,
 catagory:"female",
-image:P2
-,
+image:P2,
+var1:P21,
+var2:P22,
+
 tag:"Dress"
     } ,{
         id:3,

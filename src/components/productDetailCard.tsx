@@ -23,8 +23,7 @@ export const ProductDetailCard = (props: {
 
 <div className="flex flex-col w-[] gap-y-3">
 <div className=" "><Image className=" w-[100%]" src={props.img} alt={props.title}  width={100}/></div>
-<div className=" "><Image className=" w-[100%]" src={P11} alt={props.title}  width={100}/></div>
-<div className=" "><Image className=" w-[100%]" src={P12} alt={props.title}  width={100}/></div>
+
 
 
 
