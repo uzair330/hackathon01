@@ -2,9 +2,12 @@ import React from "react";
 import { Button } from "./ui/button";
 import { Products } from "@/app/utils/mock";
 import Image from "next/image";
+import Wrapper from "./Wrapper";
 const Unique02 = () => {
   return (
     <>
+    <Wrapper>
+
     <div className="grid md:grid-cols-1 lg:grid-cols-4 ">
         <div className=""></div>
         <div className=""></div>
@@ -49,6 +52,7 @@ const Unique02 = () => {
     <div className="pt-4"><Button>See All Products</Button></div>
   </div></div>
       </div>
+    </Wrapper>
     </>
   );
 };

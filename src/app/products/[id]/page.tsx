@@ -30,7 +30,7 @@ export default function ProductId({ params }: { params: { id: string } }) {
       ))}
 
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 bg-white   lg:px-20 lg:py-20  md:">
+      <div className="grid grid-cols-1 md:grid-cols-3 bg-white   lg:px-20 lg:py-20  px-2">
 <div className="font-bold text-3xl py-5  md:col-span-3">Product Information
 <hr className="border border-gray-300 my-4" />
 </div>

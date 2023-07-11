@@ -8,7 +8,9 @@ import { Products } from "@/app/utils/mock";
 import Wrapper from "./Wrapper";
 const SwipperProduct = () => {
   return (
-    <section className="bg-gray-50">
+    <Wrapper>
+
+    <section className="">
 
     <Wrapper>
 
@@ -55,6 +57,7 @@ const SwipperProduct = () => {
     </div>
     </Wrapper>
     </section>
+                  </Wrapper>
   );
 };
 

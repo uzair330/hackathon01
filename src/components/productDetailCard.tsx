@@ -12,21 +12,44 @@ export const ProductDetailCard = (props: {
 }) => {
   return (
 
-    <div className="flex justify-center gap-3   ">
+
+<div className="flex flex-col md:flex-row">  
      
 
-<div className="w-[10%]"><Image src={props.img} alt={props.title} /></div>
-<div className="pr-10"><Image src={props.img} alt={props.title} width={600}/></div>
-<div className="">
-  <div className="text-4xl text-bold pt-14">{props.title}</div>
+<div className="flex gap-3">
+
+
+<div className="flex flex-col w-[] gap-y-3">
+<div className=" "><Image className=" w-[100%]" src={props.img} alt={props.title}  width={100}/></div>
+<div className=" "><Image className=" w-[100%]" src={props.img} alt={props.title}  width={100}/></div>
+<div className=" "><Image className=" w-[100%]" src={props.img} alt={props.title}  width={100}/></div>
+<div className=" "><Image className=" w-[100%]" src={props.img} alt={props.title}  width={100}/></div>
+
+
+
+</div>
+
+
+
+
+<div className="pr-10 "><Image  src={props.img} alt={props.title} width={700} /></div>
+</div>
+
+
+
+
+     <div className="">
+
+
+  <div className="text-4xl text-bold pt-14 ">{props.title}</div>
   <div className="font-bold text-gray-400 text-xl pb-9 ">{props.tag}</div>
   <div className="font-bold text-xl">Select Sizes</div>
   <div className="flex">
-  <div className="bg-gray-100 rounded-full w-8 h-8 flex justify-center items-center m-2 drop-shadow-sm">XS</div>
-    <div className="bg-gray-100 rounded-full w-8 h-8 flex justify-center items-center m-2 drop-shadow-sm">S</div>
-    <div className="bg-gray-100 rounded-full w-8 h-8 flex justify-center items-center m-2 drop-shadow-sm">M</div>
-    <div className="bg-gray-100 rounded-full w-8 h-8 flex justify-center items-center m-2 drop-shadow-sm">L</div>
-    <div className="bg-gray-100 rounded-full w-8 h-8 flex justify-center items-center m-2 drop-shadow-sm">XL</div>
+  <div className="bg-gray-100 rounded-full w-8 h-8 flex justify-center items-center m-2 drop-shadow-sm hover:scale-105 hover:cursor-pointer">XS</div>
+    <div className="bg-gray-100 rounded-full w-8 h-8 flex justify-center items-center m-2 drop-shadow-sm hover:scale-105 hover:cursor-pointer">S</div>
+    <div className="bg-gray-100 rounded-full w-8 h-8 flex justify-center items-center m-2 drop-shadow-sm hover:scale-105 hover:cursor-pointer">M</div>
+    <div className="bg-gray-100 rounded-full w-8 h-8 flex justify-center items-center m-2 drop-shadow-sm hover:scale-105 hover:cursor-pointer">L</div>
+    <div className="bg-gray-100 rounded-full w-8 h-8 flex justify-center items-center m-2 drop-shadow-sm hover:scale-105 hover:cursor-pointer">XL</div>
   </div>
   
   <div className="flex justify-start items-center mb-2 font-bold text-xl"> 
@@ -41,12 +64,13 @@ export const ProductDetailCard = (props: {
     </Button>
     <div className="py-8 font-bold text-2xl px-5">${props.price}</div>
 </div>
-</div>
 
-        
+</div>
+     </div>
+
+
+
      
-      
-    </div>
 
 
   );

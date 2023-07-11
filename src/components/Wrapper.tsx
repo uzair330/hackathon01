@@ -1,6 +1,6 @@
 const Wrapper = ({ children }: { children: React.ReactNode }) => {
     return (
-      <section className="md:px-28 px-20">
+      <section className="md:px-28 px-12">
         {children}
       </section>
     );
