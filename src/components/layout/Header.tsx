@@ -4,10 +4,13 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { ShoppingCart } from "lucide-react";
 import { MenuIcon } from "lucide-react";
+import Wrapper from "../Wrapper";
 export const Header = () => {
   return (
     <>
-      <div className="flex justify-between items-center py-6 lg:px-16 md:px-28 px-16">
+    <Wrapper>
+
+      <div className="flex justify-between items-center py-6 ">
         <Link href="/">
           <Image src={logo} alt="Logo" />
         </Link>
@@ -30,7 +33,7 @@ export const Header = () => {
           type="email"
           placeholder="What you are Looking for?"
           className="lg:w-[30%] lg:h-8 hidden lg:block"
-        />
+          />
         <div className="hidden lg:block">
         <div className="h-10 w-10 rounded-full bg-gray-300 relative flex justify-center items-center">
           <ShoppingCart className="w-5 h-5" />
@@ -41,6 +44,7 @@ export const Header = () => {
         </div>
         <div className="lg:hidden"><MenuIcon /></div>
       </div>
+          </Wrapper>
     </>
   );
 };

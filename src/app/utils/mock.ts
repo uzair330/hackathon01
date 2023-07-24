@@ -1,5 +1,4 @@
 import { product } from "./type";
-
 import P1 from "/public/products/1.png";
 import P2 from "/public/products/2.png";
 import P3 from "/public/products/3.png";
@@ -106,3 +105,5 @@ image:P11
 tag:"Sweater"
     }
 ]
+
+

@@ -1,26 +1,43 @@
 import { ProductCard } from "@/components/productCard";
-import { Products } from "@/app/utils/mock";
+// import { Products } from "@/app/utils/mock";
+import { Products } from "@/app/utils/datafronsanity";
 import { StaticImageData } from "next/image";
 import { ChevronsRight } from "lucide-react";
-const itemSelection = (cat: string) => {
-  return Products.filter((products) => products.catagory === cat);
+import { client } from "@/lib/sanityclient";
+import { SanityProducts } from "@/app/Products";
+import { urlForImage } from "../../../../sanity/lib/image";
+
+const itemSelection = async (cat: string) => {
+  const data: SanityProducts[] = await Products();
+
+  return data.filter((products) => products.category === cat);
 };
 
-export default function Category({ params }: { params: { items: string } }) {
-  const result = itemSelection(params.items);
+// const itemSelection = () => {
+//   const query = ``
+// }
+
+export default async function Category({
+  params,
+}: {
+  params: { items: string };
+}) {
+  const result = await itemSelection(params.items);
   //console.log(result);
+
   return (
     <section className="py-12 flex justify-center flex-wrap gap-8">
       {result.length > 0 ? (
         result.map((product) => (
           <ProductCard
-            key={product.id}
-            title={product.name}
+            key={product._id}
+            title={product.title}
             price={product.price}
-            img={product.image as StaticImageData}
-            category={product.catagory}
-            id={product.id}
-            tag={product.tag} 
+            img={urlForImage(product.image).url()}
+            category={product.category}
+            _id={product._id}
+            tag={product.tag}
+            current={product.slug.current}
           />
         ))
       ) : (
