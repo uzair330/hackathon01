@@ -20,12 +20,16 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { SanityProducts } from "@/app/Products";
 import { SwipperCard } from "./SwipperCard";
+import Link from "next/link";
 
 interface Swip {
   data: SanityProducts[];
 }
 
 const SwipperSliderMain = async ({ data }: Swip) => {
+  const t = data[0].slug.current;
+  console.log(t);
+
   return (
     <div className="">
       <Swiper
@@ -41,22 +45,29 @@ const SwipperSliderMain = async ({ data }: Swip) => {
             slidesPerView: 3,
           },
         }}
-        spaceBetween={10}
+        spaceBetween={25}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
         {data.map((p, index) => (
           <SwiperSlide key={index}>
-            <div className="">
-              <div className="flex justify-center flex-col">
-                <Image
-                  src={urlForImage(p.image).url()}
-                  alt={p.title}
-                  width={380}
-                  height={405}
-                />
-                <p className="">{p.title}</p>
-                <p className="">${p.price}</p>
+            <div className="hover:scale-105">
+              <div className="bg-gray-50 p-2">
+                <div className="flex justify-center flex-col p-3 font-bold ">
+                  {/* product/brushed-raglan-sweatshirt */}
+                  <Link href={`/products/${p.slug.current}`}>
+                    <Image
+                      src={urlForImage(p.image).url()}
+                      alt={p.title}
+                      width={380}
+                      height={405}
+                    />
+                  </Link>
+                  <div className="py-4">
+                    <p className="font-bold">{p.title}</p>
+                    <p className="">${p.slug.current}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </SwiperSlide>
