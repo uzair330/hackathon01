@@ -10,22 +10,22 @@ import { Hero } from "@/view/Hero";
 import Promo02 from "@/view/Promo02";
 import Promotion from "@/view/Promotion";
 import Promotion02 from "@/view/Promotion02";
-import Image from "next/image";
-import img from "/public/heroimage.webp";
+
+import Swipperjs from "@/components/Swipperjs";
 export default function Home() {
   return (
     <>
       <Hero />
       <Wrapper>{/* <Promotion /> */}</Wrapper>
       <Promotion02 />
-      <SwipperProduct />
-
+      {/* <SwipperProduct /> */}
+      <Swipperjs />
       <Unique2 />
 
       <div className="flex justify-center w-full ">
         <div className="  relative w-full flex justify-center h-full">
           <div className="absolute ">
-            <div className="text-8xl opacity-10 font-bold pt-24">
+            <div className="lg:text-8xl md:text-6xl  text-[44px] opacity-10 font-bold pt-24">
               NEWSLETTER
             </div>
           </div>

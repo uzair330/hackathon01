@@ -6,7 +6,9 @@ import Wrapper from "./Wrapper";
 const Newsletter = () => {
   return (
     <div className="grid justify-items-center">
-      <div className="font-bold text-4xl pt-14">Subscribe Our Newsletter</div>
+      <div className="font-bold lg:text-4xl md:text-2xl sm:text-xs   pt-14">
+        Subscribe Our Newsletter
+      </div>
       <p className="py-5">
         Get the latest information and promo offers directly
       </p>

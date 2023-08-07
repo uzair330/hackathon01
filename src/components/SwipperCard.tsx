@@ -17,8 +17,8 @@ export const SwipperCard = (props: {
           className=""
           src={props.img}
           alt="product"
-          width={400}
-          height={400}
+          width={1000}
+          height={1000}
         />
         <h3 className="font-bold text-lg mt-4">{props.title}</h3>
 

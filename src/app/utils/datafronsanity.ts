@@ -1,14 +1,10 @@
 import { client } from "@/lib/sanityclient";
 
-
-type Iproducts = {
-  
-}
-
+// type Iproducts = {};
 
 export const Products = async () => {
-  const result =
-    await client.fetch(`*[_type == "products"] {
+  const result = await client.fetch(
+    `*[_type == "products"] {
     _id,
     title,
     tag,
@@ -18,8 +14,8 @@ export const Products = async () => {
       slug {
         current
       }
-  }`);
+  }`,
+    { revalidate: 10, cache: "no-cache" }
+  );
   return result;
 };
-
-

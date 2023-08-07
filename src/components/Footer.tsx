@@ -15,8 +15,8 @@ const Footer = () => {
       <div>
         <div className="grid grid-cols-1 md:grid-cols-4 py-16 gap-x-5 ">
           <div className="md:col-span-1">
-            <div className="">
-              <Image src={logo} alt="Logo" width={200} />
+            <div className="flex flex-grow">
+              <Image src={logo} alt="Logo" width={150} />
             </div>
             <div className="py-10 ">
               Small, artisan label that offers a thoughtfully curated collection
