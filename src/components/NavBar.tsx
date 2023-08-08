@@ -75,7 +75,9 @@ const NavBar = () => {
         {/* Toggle button click */}
         <div
           className={`${
-            navbar ? "flex flex-col items-center h-screen w-screen " : "hidden"
+            navbar
+              ? "flex flex-col items-center h-screen w-screen "
+              : "hidden lg:hidden"
           }`}
         >
           <div className="flex justify-between   w-full px-16 py-10 ">
@@ -85,7 +87,9 @@ const NavBar = () => {
               </Link>
             </div>
             <div onClick={clickHandle} className="">
-              <X />
+              <div className="w-10 h-10 shadow-md">
+                <X />
+              </div>
             </div>
           </div>
           <div className="">
