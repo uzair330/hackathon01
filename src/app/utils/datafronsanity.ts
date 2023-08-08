@@ -10,7 +10,7 @@ export const Products = async () => {
     tag,
     price,
     image,
-    category,
+    category ,
       slug {
         current
       }
