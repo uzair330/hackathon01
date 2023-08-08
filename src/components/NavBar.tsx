@@ -27,10 +27,8 @@ const NavBar = () => {
           <div className="">
             <ul className="flex gap-x-5 items-center">
               {items.map((item, index) => (
-                <Link href={item.path}>
-                  <li key={index} className="mb-2">
-                    {item.name}
-                  </li>
+                <Link key={index} href={item.path}>
+                  <li className="mb-2">{item.name}</li>
                 </Link>
               ))}
             </ul>
@@ -93,10 +91,8 @@ const NavBar = () => {
             </div>
             <ul className="">
               {items.map((item, index) => (
-                <Link href={item.path}>
-                  <li key={index} className="p-3">
-                    {item.name}
-                  </li>
+                <Link key={index} href={item.path}>
+                  <li className="p-3">{item.name}</li>
                 </Link>
               ))}
             </ul>
