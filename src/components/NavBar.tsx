@@ -80,14 +80,14 @@ const NavBar = () => {
               : "hidden lg:hidden"
           }`}
         >
-          <div className="flex justify-between   w-full px-16 py-10 ">
+          <div className="flex justify-between   w-full px-5 py-8">
             <div className="">
               <Link href="/">
                 <Image src={logo} alt="Logo" />
               </Link>
             </div>
             <div onClick={clickHandle} className="">
-              <div className="w-10 h-10 shadow-md">
+              <div className="w-10 h-10 shadow-md rounded-full flex justify-center items-center">
                 <X />
               </div>
             </div>
