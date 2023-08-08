@@ -4,14 +4,15 @@ import { Menu } from "@/components/Menu";
 import Link from "next/link";
 import logo from "/public/Logo.webp";
 import Image from "next/image";
-import { FolderClosedIcon, MenuIcon, ShoppingCart, X } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 import { Input } from "./ui/input";
 
 import Scard from "@/components/SCard";
 import Wrapper from "./Wrapper";
+
 const NavBar = () => {
-  const items = Menu;
   const [navbar, navSet] = useState(false);
+  const items = Menu;
   const clickHandle = () => {
     navSet(!navbar);
   };
