@@ -14,8 +14,9 @@ export const Products = async () => {
       slug {
         current
       }
-  }`,
-    { revalidate: 10, cache: "no-cache" }
+  }`
+    // ,
+    //   { revalidate: 10, cache: "no-cache" }
   );
   return result;
 };

@@ -65,7 +65,7 @@ const SwipperSliderMain = async ({ data }: Swip) => {
                   </Link>
                   <div className="py-4">
                     <p className="font-bold">{p.title}</p>
-                    <p className="">${p.slug.current}</p>
+                    <p className="">${p.price}</p>
                   </div>
                 </div>
               </div>
