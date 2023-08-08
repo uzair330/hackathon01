@@ -27,8 +27,6 @@ const AllProducts = async () => {
           />
         ))}
       </section>
-
-      <div className="mt-30">All Products Page</div>
     </Wrapper>
   );
 };

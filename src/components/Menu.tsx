@@ -1,15 +1,15 @@
 export const Menu = [
   {
     name: "Female",
-    path: "/",
+    path: "/category/female",
   },
   {
     name: "Male",
-    path: "/male",
+    path: "/category/male",
   },
   {
     name: "Kids",
-    path: "/female",
+    path: "/category/kids",
   },
   {
     name: "All Products",
